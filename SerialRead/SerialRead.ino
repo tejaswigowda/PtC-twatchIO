@@ -1,10 +1,8 @@
-String inData;
+String inData = "";
 
 void setup() {
   // initialize serial:
   Serial.begin(115200);
-
-  // reserve 200 bytes for the inputString:
 }
 
 void loop() {
@@ -18,9 +16,6 @@ void loop() {
         {
             Serial.print("Message Received: ");
             Serial.print(inData);
-
-
-
             inData = ""; // Clear recieved buffer
         }
     }
